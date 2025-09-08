@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Web Page</h1>
+        
+        <!-- Part 1: Event Handling -->
+        <section id="event-handling">
+            <h2>Event Handling Examples</h2>
+            <p>Move your mouse over the button below to see a message, and click for an alert.</p>
+            <button id="hover-button">Hover over me!</button>
+            <p id="hover-message" style="display: none;">You hovered over the button!</p>
+            
+            <div style="margin-top: 20px;">
+                <p>Type in the input below to see the text update in real-time:</p>
+                <input type="text" id="keyboard-input" placeholder="Start typing...">
+                <p>You typed: <span id="typed-text"></span></p>
+            </div>
+        </section>
+        
+        <!-- Part 2: Interactive Elements -->
+        <section id="interactive-elements">
+            <h2>Interactive Elements</h2>
+            
+            <div class="interactive-elements">
+                <!-- Dark/Light Mode Toggle -->
+                <div class="toggle-container">
+                    <button id="theme-toggle">Toggle Dark Mode</button>
+                    <span>Switch between light and dark themes</span>
+                </div>
+                
+                <!-- Counter -->
+                <div class="counter">
+                    <button id="decrement">-</button>
+                    <div class="counter-value" id="count">0</div>
+                    <button id="increment">+</button>
+                    <span>Click buttons to change the counter value</span>
+                </div>
+                
+                <!-- FAQ Section -->
+                <div>
+                    <h3>FAQ Section</h3>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is JavaScript?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>JavaScript is a programming language that enables interactive web pages.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What are event listeners?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Event listeners are functions that wait for a specific event to occur on an element.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is DOM manipulation?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>DOM manipulation is the process of dynamically changing the content and structure of a web page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Part 3: Form Validation -->
+        <section id="form-validation">
+            <h2>Form Validation</h2>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your full name">
+                    <div class="error" id="name-error">Please enter a valid name (minimum 2 characters)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email address">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password">
+                    <div class="error" id="password-error">Password must be at least 6 characters long</div>
+                </div>
+                
+                <button type="submit">Submit</button>
+                
+                <div class="success-message" id="success-message">
+                    Form submitted successfully!
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
